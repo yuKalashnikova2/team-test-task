@@ -1,26 +1,11 @@
 <script>
 export default {
-    props: {
-      sidebarImages: {
-        type: Array,
-        required: true,
-      }
-    }
-//   data() {
-//     return {
-//       images: [
-//         'tools',
-//         'city',
-//         'money',
-//         'link',
-//         'planner',
-//         'circle',
-//         'settings',
-//         'business',
-//         'team',
-//       ],
-//     }
-//   },
+  props: {
+    sidebarImages: {
+      type: Array,
+      required: true,
+    },
+  },
 }
 </script>
 
@@ -48,7 +33,7 @@ export default {
     <div class="sidebar__main"></div>
     <div class="sidebar__footer">
       <div class="sidebar__footer__plus">
-            <img src="/svg/plus.svg" alt="plus" />
+        <img src="/svg/plus.svg" alt="plus" />
       </div>
     </div>
   </div>
@@ -60,15 +45,12 @@ export default {
   flex-direction: column;
   background-color: #fff;
   max-width: 72px;
- height: 100%;
+  height: 100%;
   &__top {
     padding-top: 28px;
     padding-bottom: 28px;
     display: flex;
     flex-direction: column;
-
-
-
     &__logo {
       display: flex;
       justify-content: center;
@@ -101,11 +83,9 @@ export default {
       }
     }
   }
-&__main {
+  &__main {
     flex-grow: 1;
-    // flex-shrink: 0;
-    // height: 100%;
-}
+  }
   &__footer {
     flex-shrink: 0;
     margin-top: auto;
